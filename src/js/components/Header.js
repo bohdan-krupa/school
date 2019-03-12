@@ -51,7 +51,7 @@ Vue.component('my-header', {
 	</div>`
 });
 
-new Vue({ el: 'my-header' });
+// new Vue({ el: 'my-header' });
 
 const Foo = { template: '<div>foo</div>' }
 
