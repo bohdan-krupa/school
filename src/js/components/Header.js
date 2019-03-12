@@ -23,7 +23,7 @@ Vue.component('my-header', {
 	},
 	template: `<div class="header">
 		<a href="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</a>
-		<a href="/events" class="events parent" v-bind:class="{ active: active.events }">ПОДІЇ</a>
+		<rourter-link> to="/events" class="events parent" v-bind:class="{ active: active.events }">ПОДІЇ</rourter-link>
 
 		<div class="about-us-container">
 			<a class="about-us parent" v-bind:class="{ active: active.historyAndActivity || active.manual || active.rulesOfAdmission || active.teacherCollective || active.studentSelfGovernment || active.vacancies }">Про нас</a>
