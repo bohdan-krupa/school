@@ -1,0 +1,135 @@
+p.infos-title {
+	margin: 100px 0 50px 0;
+	text-align: center;
+	font-size: 24px;
+	font-family: $font;
+}
+
+.info-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+
+
+	.info {
+		position: relative;
+		width: 600px;
+		height: 300px;
+		margin: 30px;
+
+
+		.info-text {
+			box-sizing: border-box;
+			width: 300px;
+			padding: 15px;
+			float: left;
+			line-height: 120%;
+			color: #333;
+			font-size: 16px;
+			font-family: $font;
+
+			&.center {
+				padding: 30px 0 0 75px;
+				line-height: 180%;
+			}
+		}
+
+		.info-btn-1,
+		.info-btn-2,
+		.info-btn-3 {
+			position: absolute;
+			bottom: 15px;
+			width: 130px;
+			height: 45px;
+			text-align: center;
+			line-height: 45px;
+			font-family: $font-2;
+			font-size: 17px;
+			color: #222;
+			border-radius: 50px;
+			cursor: pointer;
+			transition: .3s all;
+		}
+
+		.info-btn-1 {
+			right: 15px;
+			background-color: $info-btn-1-bg-color;
+
+
+			&:hover { background-color: darken($info-btn-1-bg-color, $info-btn-bg-color-amount); }
+		}
+
+		.info-btn-2 {
+			left: 155px;
+			background-color: $info-btn-2-bg-color;
+
+
+			&:hover { background-color: darken($info-btn-2-bg-color, $info-btn-bg-color-amount); }
+		}
+
+		.info-btn-3 {
+			right: 15px;
+			background-color: $info-btn-3-bg-color;
+
+
+			&:hover { background-color: darken($info-btn-3-bg-color, $info-btn-bg-color-amount); }
+		}
+
+		.info-full-1,
+		.info-full-2,
+		.info-full-3 {
+			display: none;
+			position: fixed;
+			box-sizing: border-box;
+			width: 850px;
+			height: 500px;
+			top: calc(50% + 25px);
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1000;
+			padding: 80px 60px 0 60px;
+			font-family: $font;
+			font-size: 18px;
+			border-radius: 50px;
+		}
+
+		.info-full-1 { background-color: $info-2-bg-color; }
+		.info-full-2 { background-color: $info-3-bg-color; }
+		.info-full-3 { background-color: $info-4-bg-color; }
+
+		.info-image {
+			width: 300px;
+			height: 300px;
+			float: right;
+			overflow: hidden;
+
+
+			img {
+				width: 100%;
+				height: 100%;
+				transition: .5s all;
+
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	.info:nth-child(1) { background-color: $info-1-bg-color; }
+	.info:nth-child(2) { background-color: $info-2-bg-color; }
+	.info:nth-child(3) { background-color: $info-3-bg-color; }
+	.info:nth-child(4) { background-color: $info-4-bg-color; }
+
+	.info-reversed {
+		.info-text {
+			float: right;
+		}
+
+		.info-image {
+			float: left;
+		}
+	}
+}

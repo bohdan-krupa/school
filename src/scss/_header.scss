@@ -1,0 +1,98 @@
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	font-family: $font-2;
+	cursor: pointer;
+	text-transform: uppercase;
+
+
+	a {
+		position: absolute;
+		width: 20%;
+		text-align: center;
+		color: #333;
+		transition: .3s all;
+		z-index: 1000;
+	}
+
+	> a {
+		z-index: 1001;
+	}
+}
+
+.parent {
+	line-height: 70px;
+}
+
+.children {
+	line-height: 50px;
+	font-size: 14px;
+}
+
+.parent,
+.children {
+	background-color: $header-bg-color;
+}
+
+.events {
+	left: 20%;
+}
+
+.about-us,
+.about-us-more a {
+	left: 40%;
+}
+
+.useful-information,
+.useful-information-more a {
+	left: 60%;
+}
+
+.about-us-more,
+.useful-information-more {
+	display: none;
+	position: relative;
+	top: 68px;
+	transition: .2s all;
+}
+
+.manual,
+.to-students {
+	top: calc(50px - 1px);
+}
+
+.rules-of-admission,
+.reports {
+	top: calc(100px - 2px);
+}
+
+.teacher-collective,
+.psychologist-advice {
+	top: calc(150px - 3px);
+}
+
+.student-self-government {
+	top: calc(200px - 4px);
+}
+
+.vacancies {
+	top: calc(250px - 5px);
+}
+
+.contacts {
+	left: 80%;
+}
+
+.about-us-container:hover .about-us-more {
+	display: block;
+}
+
+.useful-information-container:hover .useful-information-more {
+	display: block;
+}
+
+.active {
+	background-color: $active-header-bg-color;
+}

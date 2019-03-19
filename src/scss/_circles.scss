@@ -1,0 +1,30 @@
+p.circles-title {
+	margin: 100px 0 20px 0;
+	text-align: center;
+	font-size: 24px;
+	font-family: $font;
+}
+
+.circles-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+
+	ul {
+		width: 600px;
+		box-sizing: border-box;
+		margin-top: 40px;
+		padding: 15px 70px;
+		font-size: 16px;
+		color: #333;
+		font-family: $font;
+		line-height: 150%;
+		list-style-type: square;
+	}
+
+	img {
+		width: 600px;
+		margin-top: 40px;
+	}
+}

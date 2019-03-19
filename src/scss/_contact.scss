@@ -1,0 +1,78 @@
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: no-wrap;
+	margin: 150px 60px 0 60px;
+	box-shadow: 0 0 100px grey;
+}
+
+.contact-text {
+	min-width: 350px;
+	box-sizing: border-box;
+	padding: 40px;
+	line-height: 200%;
+	color: #333;
+	font-family: $font;
+}
+
+.map {
+	width: 850px;
+	height: 500px;
+}
+
+textarea {
+	width: 340px;
+	height: 120px;
+	outline: none;
+	resize: none;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 18px;
+	font-size: 15px;
+}
+
+.send-btn {
+	display: inline;
+	padding: 10px 14px;
+	font-size: 17px;
+	background-color: lightskyblue;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.send-btn:hover {
+	background-color: lightsteelblue;
+}
+
+.btn-1 {
+	margin-left: calc(340px - 140.53px);
+}
+
+.blur {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #555;
+	opacity: 0.6;
+	z-index: 1000;
+}
+
+.invisible-container {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: calc(80px + 39px + (80px - 48px));
+	background-color: #E8F3FA;
+	z-index: 1001;
+}
+
+.title-name {
+	background-color: lightskyblue;
+	padding: 15px;
+}

@@ -1,0 +1,89 @@
+.admin-title,
+.admin-guestbook,
+.admin-events,
+.admin-add-events,
+.admin-del-events {
+	text-align: center;
+	font-family: 'Comfortaa';
+}
+
+.admin-title {
+	margin: 50px 0 70px 0;
+}
+
+.admin-guestbook,
+.admin-events,
+.admin-add-events,
+.admin-del-events {
+	width: 200px;
+	margin: 0 auto;
+	background-color: lightskyblue;
+	padding: 20px 17px;
+	font-size: 20px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.admin-guestbook:hover,
+.admin-events:hover,
+.admin-add-events:hover,,
+.admin-del-events:hover,,
+.back-btn:hover {
+	background-color: lightsteelblue;
+}
+
+.back-btn {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: lightskyblue;
+	padding: 14px 14px;
+	border-radius: 50px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+blockquote {
+margin: 10px 70px;
+background: #BCE8EA;
+color: #131314;
+padding: 30px 30px 30px 90px;
+position: relative;
+font-family: 'Lato', sans-serif;
+}
+blockquote:before {
+content: "\201C";
+font-family: serif;
+position: absolute;
+top: 20px;
+left: 16px;
+color: black;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: white;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+line-height: 50px;
+}
+blockquote:after {
+content: "";
+width: 4px;
+background: white;
+position:absolute;
+left: 70px;
+top: 20px;
+bottom: 20px;
+}
+blockquote p {
+margin-top: 0;
+font-size: 24px;
+font-weight: 300;
+}
+blockquote cite {
+font-style: normal;
+text-transform: uppercase;
+}

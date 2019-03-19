@@ -1,0 +1,42 @@
+.announcement-container {
+	position: fixed;
+	top: 150px;
+
+
+	.announcement-btn {
+		position: fixed;
+		left: 0;
+		background-color: $announcement-bg-color;
+		padding: 12px;
+		font-family: $font;
+		font-size: 18px;
+		border-radius: 0 50px 50px 0;
+		transition: 1.5s all;
+		cursor: pointer;
+
+
+		i {
+			padding: 0 5px;
+			color: $announcement-i-color;
+			font-size: 22px;
+		}
+	}
+
+	.announcement-text {
+		position: fixed;
+		left: -500px;
+		width: 500px;
+		height: 370px;
+		background-color: $announcement-bg-color;
+		transition: 1.5s all;
+
+
+		p {
+			padding: 55px 40px 0 40px;
+			font-size: 15px;
+			font-family: $font;
+			line-height: 130%;
+			color: #333;
+		}
+	}
+}
