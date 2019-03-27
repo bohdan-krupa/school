@@ -22,7 +22,7 @@ Vue.component('my-header', {
 		}
 	},
 	created: () => {
-		console.log($route);
+		console.log(this.$route);
 	},
 	template: `<div class="header">
 		<router-link to="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
