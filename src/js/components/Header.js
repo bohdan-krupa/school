@@ -26,7 +26,7 @@ Vue.component('my-header', {
 			}
 			console.log('rgfs')
 		}
-	}
+	},
 	watch: {
 		'$route' (to, from) {
 			this.routeUpdate(to.path)
