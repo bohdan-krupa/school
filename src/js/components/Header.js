@@ -1,31 +1,27 @@
 Vue.component('my-header', {
 	data: () => {
 		return {
-			active: {}
+			active: {
+				home: $route.path == '/' ? 1 : 0,
+				events: $route.path == '/events' ? 1 : 0,
+
+				historyAndActivity: $route.path == '/school_history' ? 1 : 0,
+				manual: $route.path == '/manual' ? 1 : 0,
+				rulesOfAdmission: $route.path == '/rules_of_admission' ? 1 : 0,
+				teacherCollective: $route.path == '/teacher_collective' ? 1 : 0,
+				studentSelfGovernment: $route.path == '/student_self-government' ? 1 : 0,
+				vacancies: $route.path == '/vacancies' ? 1 : 0,
+
+				toParents: $route.path == '/to_parents' ? 1 : 0,
+				toStudents: $route.path == '/to_students' ? 1 : 0,
+				reports: $route.path == '/reports/' ? 1 : 0,
+				psychologistAdvice: $route.path == '/psychologist_advice' ? 1 : 0,
+
+				contacts: $route.path == '/contact' ? 1 : 0
+			}
 		}
 	},
-	computed: {
-		test() {
-		console.log(this.$route.path)
-		this.active = {
-			home: this.$route.path == '/' ? 1 : 0,
-			events: this.$route.path == '/events' ? 1 : 0,
 
-			historyAndActivity: this.$route.path == '/school_history' ? 1 : 0,
-			manual: this.$route.path == '/manual' ? 1 : 0,
-			rulesOfAdmission: this.$route.path == '/rules_of_admission' ? 1 : 0,
-			teacherCollective: this.$route.path == '/teacher_collective' ? 1 : 0,
-			studentSelfGovernment: this.$route.path == '/student_self-government' ? 1 : 0,
-			vacancies: this.$route.path == '/vacancies' ? 1 : 0,
-
-			toParents: this.$route.path == '/to_parents' ? 1 : 0,
-			toStudents: this.$route.path == '/to_students' ? 1 : 0,
-			reports: this.$route.path == '/reports/' ? 1 : 0,
-			psychologistAdvice: this.$route.path == '/psychologist_advice' ? 1 : 0,
-
-			contacts: this.$route.path == '/contact' ? 1 : 0
-		}
-	},
 	template: `<div class="header">
 		<router-link to="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
 		<router-link to="/events" class="events parent" v-bind:class="{ active: active.events }">Події</router-link>
