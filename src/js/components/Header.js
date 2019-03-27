@@ -23,7 +23,7 @@ Vue.component('my-header', {
 			reports: this.$route.path == '/reports/' ? 1 : 0,
 			psychologistAdvice: this.$route.path == '/psychologist_advice' ? 1 : 0,
 
-			contacts: sitePath == '/contact' ? 1 : 0
+			contacts: this.$route.path == '/contact' ? 1 : 0
 		}
 	},
 	template: `<div class="header">
