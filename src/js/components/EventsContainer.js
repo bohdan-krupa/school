@@ -12,4 +12,4 @@ let EventsContainer = Vue.component('events-container', {
             <div class="waves-effect waves-light btn-large blue lighten-2">Всі події</div>
         </div>
     </div>`
-});
+})
