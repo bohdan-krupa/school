@@ -1,28 +1,30 @@
 Vue.component('my-header', {
-	data: function() {
+	data: () => {
 		return {
+			sitePath: null,
 			active: {
-				home: this.$route == '/' ? 1 : 0,
-				events: this.$route == '/events' ? 1 : 0,
+				home: sitePath == '/' ? 1 : 0,
+				events: sitePath == '/events' ? 1 : 0,
 
-				historyAndActivity: this.$route == '/school_history' ? 1 : 0,
-				manual: this.$route == '/manual' ? 1 : 0,
-				rulesOfAdmission: this.$route == '/rules_of_admission' ? 1 : 0,
-				teacherCollective: this.$route == '/teacher_collective' ? 1 : 0,
-				studentSelfGovernment: this.$route == '/student_self-government' ? 1 : 0,
-				vacancies: this.$route == '/vacancies' ? 1 : 0,
+				historyAndActivity: sitePath == '/school_history' ? 1 : 0,
+				manual: sitePath == '/manual' ? 1 : 0,
+				rulesOfAdmission: sitePath == '/rules_of_admission' ? 1 : 0,
+				teacherCollective: sitePath == '/teacher_collective' ? 1 : 0,
+				studentSelfGovernment: sitePath == '/student_self-government' ? 1 : 0,
+				vacancies: sitePath == '/vacancies' ? 1 : 0,
 
-				toParents: this.$route == '/to_parents' ? 1 : 0,
-				toStudents: this.$route == '/to_students' ? 1 : 0,
-				reports: this.$route == '/reports/' ? 1 : 0,
-				psychologistAdvice: this.$route == '/psychologist_advice' ? 1 : 0,
+				toParents: sitePath == '/to_parents' ? 1 : 0,
+				toStudents: sitePath == '/to_students' ? 1 : 0,
+				reports: sitePath == '/reports/' ? 1 : 0,
+				psychologistAdvice: sitePath == '/psychologist_advice' ? 1 : 0,
 
-				contacts: this.$route == '/contact' ? 1 : 0
+				contacts: sitePath == '/contact' ? 1 : 0
 			}
 		}
 	},
 	created: function() {
-		console.log(this.$route);
+		console.log(this.$route)
+		this.sitePath = this.$route.path
 	},
 	template: `<div class="header">
 		<router-link to="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
