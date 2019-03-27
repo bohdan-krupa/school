@@ -1,7 +1,7 @@
 Vue.component('my-header', {
 	data: () => {
 		return {
-			sitePath: null,
+			sitePath: '',
 			active: {
 				home: sitePath == '/' ? 1 : 0,
 				events: sitePath == '/events' ? 1 : 0,
