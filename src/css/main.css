@@ -252,6 +252,7 @@ p.features-title {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  opacity: 0;
   transition: 2s opacity; }
   .features-container div.feature {
     width: 400px;
