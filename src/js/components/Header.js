@@ -29,7 +29,7 @@ Vue.component('my-header', {
 			<a class="about-us parent" v-bind:class="{ active: active.historyAndActivity || active.manual || active.rulesOfAdmission || active.teacherCollective || active.studentSelfGovernment || active.vacancies }">Про нас</a>
 			<div class="about-us-more">
 				<router-link to="/history_and_activity/" class="children" v-bind:class="{ active: active.historyAndActivity }">Історія і діяльність</router-link>
-				<router-link to="/manual/" class="manual children" v-bind:class="{ active: active.manual }">Статут</a>
+				<router-link to="/manual/" class="manual children" v-bind:class="{ active: active.manual }">Статут</router-link>
 				<router-link to="/rules_of_admission/" class="rules-of-admission children" v-bind:class="{ active: active.rulesOfAdmission }">Правила прийому</router-link>
 				<router-link to="/teacher_collective/" class="teacher-collective children" v-bind:class="{ active: active.teacherCollective }">Педагогічний колектив</router-link>
 				<router-link to="/student_self-government/" class="student-self-government children" v-bind:class="{ active: active.studentSelfGovernment }">Учнівське самоврядування</router-link>
