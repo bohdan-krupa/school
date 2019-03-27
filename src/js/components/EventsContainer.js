@@ -11,5 +11,6 @@ let EventsContainer = Vue.component('events-container', {
             <p></p>
             <div class="waves-effect waves-light btn-large blue lighten-2">Всі події</div>
         </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vero, soluta placeat fuga sint labore rem totam facilis, atque incidunt dolorum, mollitia explicabo quo obcaecati? Blanditiis itaque optio quo ducimus?</p>
     </div>`
 });
