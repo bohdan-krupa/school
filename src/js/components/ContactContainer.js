@@ -1,4 +1,4 @@
-Vue.component('contact-container', {
+let ContactContainer = Vue.component('contact-container', {
     template: `<div class="contact-container">
         <div class="contact-text">
             <p class="title">Контакти школи:</p>
