@@ -21,7 +21,7 @@ Vue.component('my-header', {
 			}
 		}
 	},
-	created: () => {
+	created: function() {
 		console.log(this.$route);
 	},
 	template: `<div class="header">
