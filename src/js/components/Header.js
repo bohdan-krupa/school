@@ -1,5 +1,5 @@
 Vue.component('my-header', {
-	data: () => {
+	data: function() {
 		return {
 			active: {
 				home: this.$route == '/' ? 1 : 0,
