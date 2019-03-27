@@ -8,8 +8,6 @@ Vue.component('intro', {
     </div>`
 });
 
-new Vue({ el: 'intro' });
-
 Vue.component('announcement', {
     template: `<div class="announcement-container">
         <div class="announcement-text">
@@ -30,8 +28,6 @@ Vue.component('announcement', {
         </div>
     </div>`
 });
-
-new Vue({ el: 'announcement' });
 
 Vue.component('features', {
     data: () => {
@@ -74,8 +70,6 @@ Vue.component('features', {
         </div>
     </div>`
 });
-
-new Vue({ el: 'features' });
 
 Vue.component('info', {
     template: `<div>
@@ -190,8 +184,6 @@ Vue.component('info', {
     </div>`
 });
 
-new Vue({ el: 'info' });
-
 Vue.component('circles', {
     data: () => {
         return {
@@ -226,16 +218,12 @@ Vue.component('circles', {
     </div>`
 });
 
-new Vue({ el: 'circles' });
-
 Vue.component('main-events', {
     template: `<div>
         <p class="main-events-title">Головні події</p>
         <div class="events-container"></div>
     </div>`
 });
-
-new Vue({ el: 'main-events' });
 
 Vue.component('live-numbers', {
     template: `<div>
@@ -256,5 +244,3 @@ Vue.component('live-numbers', {
         </div>
     </div>`
 });
-
-new Vue({ el: 'live-numbers' });
