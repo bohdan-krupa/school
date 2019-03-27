@@ -40,9 +40,9 @@ Vue.component('my-header', {
 		<div class="useful-information-container">
 			<a class="useful-information parent" v-bind:class="{ active: active.toParents || active.toStudents || active.reports || active.psychologistAdvice}">КОРИСНА ІНФОРМАЦІЯ</a>
 			<div class="useful-information-more">
-				<router-link to="/to_parents" class="children" v-bind:class="{ active: active.toParents }">БАТЬКАМ</a>
-				<router-link to="/to_students" class="to-students children" v-bind:class="{ active: active.toStudents }">УЧНЯМ</a>
-				<router-link to="/reports" class="reports children" v-bind:class="{ active: active.reports }">ЗВІТИ</a>
+				<router-link to="/to_parents" class="children" v-bind:class="{ active: active.toParents }">БАТЬКАМ</router-link>
+				<router-link to="/to_students" class="to-students children" v-bind:class="{ active: active.toStudents }">УЧНЯМ</router-link>
+				<router-link to="/reports" class="reports children" v-bind:class="{ active: active.reports }">ЗВІТИ</router-link>
 				<router-link to="/psychologist_advice" class="psychologist-advice children" v-bind:class="{ active: active.psychologistAdvice }">ПОРАДИ ПСИХОЛОГА</router-link>
 			</div>
 		</div>
