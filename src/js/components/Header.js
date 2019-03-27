@@ -47,6 +47,6 @@ Vue.component('my-header', {
 			</div>
 		</div>
 		
-		<a href="/contacts" class="contacts parent" v-bind:class="{ active: active.contacts }">КОНТАКТИ</a>
+		<router-link to="/contacts" class="contacts parent" v-bind:class="{ active: active.contacts }">Контакти</router-link>
 	</div>`
 });
