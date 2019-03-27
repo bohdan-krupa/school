@@ -5,17 +5,17 @@ Vue.component('my-header', {
 				home: location.hash == '#/' ? 1 : 0,
 				events: location.hash == '#/events' ? 1 : 0,
 
-				historyAndActivity: location.pathname == '/school_history/' ? 1 : 0,
-				manual: location.pathname == '/manual/' ? 1 : 0,
-				rulesOfAdmission: location.pathname == '/rules_of_admission/' ? 1 : 0,
-				teacherCollective: location.pathname == '/teacher_collective/' ? 1 : 0,
-				studentSelfGovernment: location.pathname == '/student_self-government/' ? 1 : 0,
-				vacancies: location.pathname == '/vacancies/' ? 1 : 0,
+				historyAndActivity: location.hash == '#/school_history' ? 1 : 0,
+				manual: location.hash == '#/manual' ? 1 : 0,
+				rulesOfAdmission: location.hash == '#/rules_of_admission' ? 1 : 0,
+				teacherCollective: location.hash == '#/teacher_collective' ? 1 : 0,
+				studentSelfGovernment: location.hash == '#/student_self-government' ? 1 : 0,
+				vacancies: location.hash == '#/vacancies' ? 1 : 0,
 
-				toParents: location.pathname == '/to_parents/' ? 1 : 0,
-				toStudents: location.pathname == '/to_students/' ? 1 : 0,
-				reports: location.pathname == '/reports/' ? 1 : 0,
-				psychologistAdvice: location.pathname == '/psychologist_advice/' ? 1 : 0,
+				toParents: location.hash == '#/to_parents' ? 1 : 0,
+				toStudents: location.hash == '#/to_students' ? 1 : 0,
+				reports: location.hash == '#/reports/' ? 1 : 0,
+				psychologistAdvice: location.hash == '#/psychologist_advice' ? 1 : 0,
 
 				contacts: location.hash == '#/contact' ? 1 : 0
 			}
