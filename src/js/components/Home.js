@@ -245,7 +245,7 @@ Vue.component('live-numbers', {
 	</div>`
 });
 
-Vue.component('home', {
+let Home = Vue.component('home', {
 	template: `<div>
 		<intro></intro>
 		<announcement></announcement>
