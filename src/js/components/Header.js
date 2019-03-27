@@ -26,6 +26,9 @@ Vue.component('my-header', {
 			}
 		}
 	},
+	created: function() {
+		routeUpdate(this.$route.path)
+	}
 	watch: {
 		'$route' (to, from) {
 			this.routeUpdate(to.path)
