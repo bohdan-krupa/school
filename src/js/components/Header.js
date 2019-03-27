@@ -17,7 +17,7 @@ Vue.component('my-header', {
 				reports: location.pathname == '/reports/' ? 1 : 0,
 				psychologistAdvice: location.pathname == '/psychologist_advice/' ? 1 : 0,
 
-				contacts: location.hash == '/contacts/' ? 1 : 0
+				contacts: location.hash == '/#contacts/' ? 1 : 0
 			}
 		}
 	},
