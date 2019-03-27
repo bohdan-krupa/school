@@ -1,4 +1,4 @@
-Vue.component('events-container', {
+let EventsContainer = Vue.component('events-container', {
     template: `<div>
         <p class="events-title">Наші події</p>
 
@@ -13,5 +13,3 @@ Vue.component('events-container', {
         </div>
     </div>`
 });
-
-new Vue({ el: 'events-container' });
