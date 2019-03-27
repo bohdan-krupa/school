@@ -2,8 +2,8 @@ Vue.component('my-header', {
 	data: () => {
 		return {
 			active: {
-				home: location.pathname == '/' ? 1 : 0,
-				events: location.pathname == '/events/' ? 1 : 0,
+				home: location.hash == '#/' ? 1 : 0,
+				events: location.hash == '#/events' ? 1 : 0,
 
 				historyAndActivity: location.pathname == '/school_history/' ? 1 : 0,
 				manual: location.pathname == '/manual/' ? 1 : 0,
