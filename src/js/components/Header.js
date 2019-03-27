@@ -50,7 +50,9 @@ Vue.component('my-header', {
 		
 		<router-link to="/contact" class="contacts parent" v-bind:class="{ active: active.contacts }">Контакти</router-link>
 	</div>`,
-	beforeRouteUpdate (to, from, next) {
-		console.log(to)
+	watch: {
+		'$route' (to, from) {
+			console.log(to)
+		}
 	}
 });
