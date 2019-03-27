@@ -491,9 +491,6 @@ p.live-numbers-title {
       opacity: 1;
       transform: scale(1.1); }
 
-.events-container {
-  display: none; }
-
 .events-title {
   display: none;
   margin: 145px 0 30px 0;
