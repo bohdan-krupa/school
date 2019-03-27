@@ -23,7 +23,7 @@ Vue.component('my-header', {
 		}
 	},
 	beforeRouteUpdate (to, from, next) {
-		console.log(to, from, next)
+		console.log(to)
 	},
 	template: `<div class="header">
 		<router-link to="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
