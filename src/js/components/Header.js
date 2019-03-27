@@ -22,7 +22,6 @@ Vue.component('my-header', {
 			}
 		}
 	},
-
 	template: `<div class="header">
 		<router-link to="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
 		<router-link to="/events" class="events parent" v-bind:class="{ active: active.events }">Події</router-link>
