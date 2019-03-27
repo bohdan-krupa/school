@@ -19,7 +19,7 @@ Vue.component('my-header', {
 
 				toParents: to == '/to_parents' ? 1 : 0,
 				toStudents: to == '/to_students' ? 1 : 0,
-				reports: to == '/reports/' ? 1 : 0,
+				reports: to == '/reports' ? 1 : 0,
 				psychologistAdvice: to == '/psychologist_advice' ? 1 : 0,
 
 				contacts: to == '/contact' ? 1 : 0
