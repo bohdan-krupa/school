@@ -24,12 +24,11 @@ Vue.component('my-header', {
 
 				contacts: to == '/contact' ? 1 : 0
 			}
-			console.log('rgfs')
 		}
 	},
 	watch: {
 		'$route' (to, from) {
-			this.routeUpdate(to.path)
+			routeUpdate(to.path)
 		}
 	},
 	template: `<div class="header">
