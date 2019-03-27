@@ -1,23 +1,24 @@
 Vue.component('my-header', {
 	data: () => {
 		return {
+			site.Path: '/',
 			active: {
-				home: $route.path == '/' ? 1 : 0,
-				events: $route.path == '/events' ? 1 : 0,
+				home: this.sitePath == '/' ? 1 : 0,
+				events: this.sitePath == '/events' ? 1 : 0,
 
-				historyAndActivity: $route.path == '/school_history' ? 1 : 0,
-				manual: $route.path == '/manual' ? 1 : 0,
-				rulesOfAdmission: $route.path == '/rules_of_admission' ? 1 : 0,
-				teacherCollective: $route.path == '/teacher_collective' ? 1 : 0,
-				studentSelfGovernment: $route.path == '/student_self-government' ? 1 : 0,
-				vacancies: $route.path == '/vacancies' ? 1 : 0,
+				historyAndActivity: this.sitePath == '/school_history' ? 1 : 0,
+				manual: this.sitePath == '/manual' ? 1 : 0,
+				rulesOfAdmission: this.sitePath == '/rules_of_admission' ? 1 : 0,
+				teacherCollective: this.sitePath == '/teacher_collective' ? 1 : 0,
+				studentSelfGovernment: this.sitePath == '/student_self-government' ? 1 : 0,
+				vacancies: this.sitePath == '/vacancies' ? 1 : 0,
 
-				toParents: $route.path == '/to_parents' ? 1 : 0,
-				toStudents: $route.path == '/to_students' ? 1 : 0,
-				reports: $route.path == '/reports/' ? 1 : 0,
-				psychologistAdvice: $route.path == '/psychologist_advice' ? 1 : 0,
+				toParents: this.sitePath == '/to_parents' ? 1 : 0,
+				toStudents: this.sitePath == '/to_students' ? 1 : 0,
+				reports: this.sitePath == '/reports/' ? 1 : 0,
+				psychologistAdvice: this.sitePath == '/psychologist_advice' ? 1 : 0,
 
-				contacts: $route.path == '/contact' ? 1 : 0
+				contacts: this.sitePath == '/contact' ? 1 : 0
 			}
 		}
 	},
