@@ -22,28 +22,28 @@ Vue.component('my-header', {
 		}
 	},
 	template: `<div class="header">
-		<a href="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</a>
+		<router-link href="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
 		<router-link to="/events" class="events parent" v-bind:class="{ active: active.events }">Події</router-link>
 
 		<div class="about-us-container">
 			<a class="about-us parent" v-bind:class="{ active: active.historyAndActivity || active.manual || active.rulesOfAdmission || active.teacherCollective || active.studentSelfGovernment || active.vacancies }">Про нас</a>
 			<div class="about-us-more">
-				<a href="/history_and_activity/" class="children" v-bind:class="{ active: active.historyAndActivity }">Історія і діяльність</a>
-				<a href="/manual/" class="manual children" v-bind:class="{ active: active.manual }">Статут</a>
-				<a href="/rules_of_admission/" class="rules-of-admission children" v-bind:class="{ active: active.rulesOfAdmission }">Правила прийому</a>
-				<a href="/teacher_collective/" class="teacher-collective children" v-bind:class="{ active: active.teacherCollective }">Педагогічний колектив</a>
-				<a href="/student_self-government/" class="student-self-government children" v-bind:class="{ active: active.studentSelfGovernment }">Учнівське самоврядування</a>
-				<a href="/vacancies/" class="vacancies children" v-bind:class="{ active: active.vacancies }">Вакансії</a>
+				<router-link to="/history_and_activity/" class="children" v-bind:class="{ active: active.historyAndActivity }">Історія і діяльність</router-link>
+				<router-link to="/manual/" class="manual children" v-bind:class="{ active: active.manual }">Статут</a>
+				<router-link to="/rules_of_admission/" class="rules-of-admission children" v-bind:class="{ active: active.rulesOfAdmission }">Правила прийому</router-link>
+				<router-link to="/teacher_collective/" class="teacher-collective children" v-bind:class="{ active: active.teacherCollective }">Педагогічний колектив</router-link>
+				<router-link to="/student_self-government/" class="student-self-government children" v-bind:class="{ active: active.studentSelfGovernment }">Учнівське самоврядування</router-link>
+				<router-link to="/vacancies/" class="vacancies children" v-bind:class="{ active: active.vacancies }">Вакансії</router-link>
 			</div>
 		</div>
 
 		<div class="useful-information-container">
 			<a class="useful-information parent" v-bind:class="{ active: active.toParents || active.toStudents || active.reports || active.psychologistAdvice}">КОРИСНА ІНФОРМАЦІЯ</a>
 			<div class="useful-information-more">
-				<a href="/to_parents" class="children" v-bind:class="{ active: active.toParents }">БАТЬКАМ</a>
-				<a href="/to_students" class="to-students children" v-bind:class="{ active: active.toStudents }">УЧНЯМ</a>
-				<a href="/reports" class="reports children" v-bind:class="{ active: active.reports }">ЗВІТИ</a>
-				<a href="/psychologist_advice" class="psychologist-advice children" v-bind:class="{ active: active.psychologistAdvice }">ПОРАДИ ПСИХОЛОГА</a>
+				<router-link to="/to_parents" class="children" v-bind:class="{ active: active.toParents }">БАТЬКАМ</a>
+				<router-link to="/to_students" class="to-students children" v-bind:class="{ active: active.toStudents }">УЧНЯМ</a>
+				<router-link to="/reports" class="reports children" v-bind:class="{ active: active.reports }">ЗВІТИ</a>
+				<router-link to="/psychologist_advice" class="psychologist-advice children" v-bind:class="{ active: active.psychologistAdvice }">ПОРАДИ ПСИХОЛОГА</router-link>
 			</div>
 		</div>
 		
