@@ -28,7 +28,7 @@ Vue.component('my-header', {
 	},
 	watch: {
 		'$route' (to, from) {
-			routeUpdate(to.path)
+			this.routeUpdate(to.path)
 		}
 	},
 	template: `<div class="header">
