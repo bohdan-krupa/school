@@ -22,10 +22,10 @@ Vue.component('my-header', {
 			}
 		}
 	},
-	created: function() {
-		console.log(this.$route.path)
-		this.sitePath = this.$route.path
-	},
+	// created: function() {
+	// 	console.log(this.$route.path)
+	// 	this.sitePath = this.$route.path
+	// },
 	template: `<div class="header">
 		<router-link to="/" class="home parent" v-bind:class="{ active: active.home }">ГОЛОВНА</router-link>
 		<router-link to="/events" class="events parent" v-bind:class="{ active: active.events }">Події</router-link>
