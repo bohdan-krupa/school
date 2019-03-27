@@ -2,22 +2,22 @@ Vue.component('my-header', {
 	data: () => {
 		return {
 			active: {
-				home: location.hash == '#/' ? 1 : 0,
-				events: location.hash == '#/events' ? 1 : 0,
+				home: this.$route == '/' ? 1 : 0,
+				events: this.$route == '/events' ? 1 : 0,
 
-				historyAndActivity: location.hash == '#/school_history' ? 1 : 0,
-				manual: location.hash == '#/manual' ? 1 : 0,
-				rulesOfAdmission: location.hash == '#/rules_of_admission' ? 1 : 0,
-				teacherCollective: location.hash == '#/teacher_collective' ? 1 : 0,
-				studentSelfGovernment: location.hash == '#/student_self-government' ? 1 : 0,
-				vacancies: location.hash == '#/vacancies' ? 1 : 0,
+				historyAndActivity: this.$route == '/school_history' ? 1 : 0,
+				manual: this.$route == '/manual' ? 1 : 0,
+				rulesOfAdmission: this.$route == '/rules_of_admission' ? 1 : 0,
+				teacherCollective: this.$route == '/teacher_collective' ? 1 : 0,
+				studentSelfGovernment: this.$route == '/student_self-government' ? 1 : 0,
+				vacancies: this.$route == '/vacancies' ? 1 : 0,
 
-				toParents: location.hash == '#/to_parents' ? 1 : 0,
-				toStudents: location.hash == '#/to_students' ? 1 : 0,
-				reports: location.hash == '#/reports/' ? 1 : 0,
-				psychologistAdvice: location.hash == '#/psychologist_advice' ? 1 : 0,
+				toParents: this.$route == '/to_parents' ? 1 : 0,
+				toStudents: this.$route == '/to_students' ? 1 : 0,
+				reports: this.$route == '/reports/' ? 1 : 0,
+				psychologistAdvice: this.$route == '/psychologist_advice' ? 1 : 0,
 
-				contacts: location.hash == '#/contact' ? 1 : 0
+				contacts: this.$route == '/contact' ? 1 : 0
 			}
 		}
 	},
