@@ -23,7 +23,7 @@ Vue.component('my-header', {
 		}
 	},
 	created: function() {
-		console.log(this.$route)
+		console.log(this.$route.path)
 		this.sitePath = this.$route.path
 	},
 	template: `<div class="header">
