@@ -24,8 +24,8 @@ Vue.component('my-header', {
 	},
 	watch: {
 		'$route' (to, from) {
-			console.log(to)
-			this.sitePath = to
+			console.log(to.path)
+			this.sitePath = to.path
 		}
 	},
 	template: `<div class="header">
