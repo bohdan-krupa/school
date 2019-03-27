@@ -10,7 +10,7 @@ Vue.component('my-header', {
 				home: to == '/' ? 1 : 0,
 				events: to == '/events' ? 1 : 0,
 
-				historyAndActivity: to == '/school_history' ? 1 : 0,
+				historyAndActivity: to == '/history_and_activity' ? 1 : 0,
 				manual: to == '/manual' ? 1 : 0,
 				rulesOfAdmission: to == '/rules_of_admission' ? 1 : 0,
 				teacherCollective: to == '/teacher_collective' ? 1 : 0,
