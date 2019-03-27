@@ -15,5 +15,3 @@ Vue.component('contact-container', {
         <div class="map"></div>
     </div>`
 });
-
-new Vue({ el: 'contact-container' });
