@@ -1,6 +1,6 @@
 let databaseRef = firebase.database().ref()
 let numberOfStudents = databaseRef.child('numberOfStudents')
-let numberOfStudents = databaseRef.child('numberOfTeachers')
+let numberOfTeachers = databaseRef.child('numberOfTeachers')
 
 
 numberOfStudents.once('value').then(snap => {
