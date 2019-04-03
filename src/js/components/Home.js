@@ -231,7 +231,7 @@ Vue.component('live-numbers', {
 			// numbersOfTeachers: null
 		}
 	},
-    props: ['numberOfStudents', 'numbersOfTeachers'],
+    props: ['numberOfStudents', 'numberOfTeachers'],
 	template: `<div>
 		<p class="live-numbers-title">Школа у цифрах</p>
 		<div class="live-numbers-container">
