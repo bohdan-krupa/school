@@ -228,16 +228,15 @@ Vue.component('main-events', {
 Vue.component('live-numbers', {
 	data: () => {
 		return {
-			// numbersOfStudents: 'fs',
 			numbersOfTeachers: null
 		}
 	},
-	props: ['numbersOfStudents'],
+	props: ['numberOfStudents'],
 	template: `<div>
 		<p class="live-numbers-title">Школа у цифрах</p>
 		<div class="live-numbers-container">
 			<div class="block-number">
-				<p class="live-number-1">{{ numbersOfStudents }}</p>
+				<p class="live-number-1">{{ numberOfStudents }}</p>
 				<p>Учнів</p>
 			</div>
 			<div class="block-number">
@@ -253,7 +252,7 @@ Vue.component('live-numbers', {
 });
 
 let Home = Vue.component('home', {
-    props: ['numbers-of-students'],
+    props: ['numberOfStudents'],
 	template: `<div>
 		<intro></intro>
 		<announcement></announcement>
@@ -261,6 +260,6 @@ let Home = Vue.component('home', {
 		<info></info>
 		<circles></circles>
 		<main-events></main-events>
-		<live-numbers :numbers-of-students="numbersOfStudents"></live-numbers>
+		<live-numbers :number-of-students="numberOfStudents"></live-numbers>
 	</div>`
 })
