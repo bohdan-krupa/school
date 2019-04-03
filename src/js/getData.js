@@ -5,4 +5,4 @@ numberOfStudents.once('value').then(snap => {
 	console.log(snap.val())
 	app.numberOfStudents = snap.val()
 })
-console.log(app.numberOfStudents)
+console.log(app.numberOfStudends)
