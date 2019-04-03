@@ -252,6 +252,7 @@ let LiveNumbers = Vue.component('live-numbers', {
 });
 
 let Home = Vue.component('home', {
+	props: [numbersOfStudents],
 	template: `<div>
 		<intro></intro>
 		<announcement></announcement>
@@ -259,6 +260,6 @@ let Home = Vue.component('home', {
 		<info></info>
 		<circles></circles>
 		<main-events></main-events>
-		<live-numbers></live-numbers>
+		<live-numbers :numbersOfStudents="numbersOfStudents">{{ numbersOfStudents }}</live-numbers>
 	</div>`
 })
