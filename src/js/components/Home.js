@@ -226,15 +226,21 @@ Vue.component('main-events', {
 });
 
 Vue.component('live-numbers', {
+	data: () => {
+		return {
+			numbersOfStudents: 'Завантаження',
+			numbersOfTeachers: 'Завантаження'
+		}
+	},
 	template: `<div>
 		<p class="live-numbers-title">Школа у цифрах</p>
 		<div class="live-numbers-container">
 			<div class="block-number">
-				<p class="live-number-1">801</p>
+				<p class="live-number-1">{{ numbersOfStudents }}</p>
 				<p>Учнів</p>
 			</div>
 			<div class="block-number">
-				<p class="live-number-2">70</p>
+				<p class="live-number-2">{{ numbersOfTeachers }}</p>
 				<p>Вчителів</p>
 			</div>
 			<div class="block-number">
