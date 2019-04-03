@@ -225,7 +225,7 @@ Vue.component('main-events', {
 	</div>`
 });
 
-Vue.component('live-numbers', {
+let LiveNumbers =  Vue.component('live-numbers', {
 	data: () => {
 		return {
 			numbersOfStudents: null,
