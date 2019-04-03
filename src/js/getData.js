@@ -14,9 +14,13 @@ numberOfTeachers.once('value').then(snap => {
 })
 
 events.once('value').then(snap => {
-	console.log(snap.val())
 	let target = snap.val()
-	target.push('sdf')
+	target.push({
+		title: "КВК",
+		photo: "https://lh3.googleusercontent.com/7_xkPsrAE08wHV8vgnCfFqryn410VlYRQzcFOxWW1N_k0i8BC8YPLms9qU6a8JhVJvIh_c2csEhVlVcQ-Rw5X9CYii_V0RDtjGlfKgw0gIFqvtcz5_W6wRrvsW4rkGfLGjnQiFT_oRdpvCgEIZLAsO5TsrVIkjuUKeXEJAeSMD2DV7nBc85uCOEa4dDibziGkFKJBs2cgZk2_SqOahWHnb4xRcq4__9VYG4zaa8QlOKwZdNuwtmSwcM-bvVR6YAnHzD79SGSVI-8CIsIH_Lw-bCDS6MTb1eqsm8uhyDRXPhZCMNEi7c-FQAcVMxAmetj9vhgEHBy_rGt0wtu3P63MWgKntsMkQRF9Qi1iAm9KKrXwMFFK9rp5biJ_6cXTwi07XemW5UedOqwa893x25KWLSaj2tgKTKeL-Nvn9BG_dfS1V54AvN0fZkeVx2oonR4TssQhP751e9vUJPKMBkdsVNXdqdhMsgsSQ6cRxOCV0Dcv7fkpTz2pPiIsKkgOSIjq69m-ZzOnjakCBh2g3NrqpS9q3OKiuuZlXsC5R1Vg6gkreHuw5S30H-XhBzStiEtRW9Lgyes4YNyLn_gLjn5V7R2wrZyzLEU4whLp6w=w1079-h809-no",
+		text: "7 травня у СЗШ №96 відбулось змагання учнівської ліги КВК Сихівського району м. Львова. Організаторами змагань виступили Сихівський учнівський парламент (координатор Карлаш О.) та учнівське самоврядування СЗШ №96 (координатор Тимчишин С.) за підтримки Відділу освіти Сихівського та Личаківського районів, Центру дитячої та юнацької творчості МЖК-1.\n\nУ змаганнях брало участь 6 команд Сихова: &quot;Без назви&quot; (СЗШ №96), &quot;Особові займенники&quot; (НВК &quot;Школа-садок &quot;Софія&quot;&quot;), &quot;Зайці з БАМУ&quot; (СЗШ №86), &quot;Онуки Загорецької&quot; (СЗШ №1), &quot;Море по коліна&quot; (НВК &quot;Школа-ліцей &quot;Оріяна&quot;&quot;) та &quot;Одинадцять з десяти&quot; (СЗШ №95).\n\nКонкурс складався з трьох частин: І - &quot;Візитка&quot;, ІІ - &quot;Імпровізація&quot; (бліц, на якому оцінювались смішні та оригінальні відповіді команд), ІІІ - музичний номер на тему &quot;Моя майбутня професія&quot;. \n\nОцінювали конкурс судді: Логін Н. (головний спеціаліст ВО), Москва Т. (методист НМЦО м. Львова) і Товарницька Н. (методист Центру дитячої та юнацької творчості МЖК-1).\n\nРезультати конкурсу:\n\nІ місце - &quot;Особові займенники&quot; (НВК &quot;Школа-садок &quot;Софія&quot;&quot;);\n\nІІ місце - &quot;Онуки Загорецької&quot; (СЗШ №1);\n\nІІІ місце - &quot;Зайці з БАМУ&quot; (СЗШ №86).\n\nВсі учасники отримали грамоти, а переможці - солодкі подарунки.",
+	})
+	events.set(target)
 	console.log(target)
 })
 
