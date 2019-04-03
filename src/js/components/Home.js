@@ -240,7 +240,7 @@ Vue.component('live-numbers', {
 				<p>Учнів</p>
 			</div>
 			<div class="block-number">
-				<p class="live-number-2">{{ numbersOfTeachers }}</p>
+				<p class="live-number-2">{{ numberOfTeachers }}</p>
 				<p>Вчителів</p>
 			</div>
 			<div class="block-number">
@@ -252,7 +252,7 @@ Vue.component('live-numbers', {
 });
 
 let Home = Vue.component('home', {
-	props: ['numberOfStudents', 'numbersOfTeachers'],
+	props: ['numberOfStudents', 'numberOfTeachers'],
 	template: `<div>
 		<intro></intro>
 		<announcement></announcement>
