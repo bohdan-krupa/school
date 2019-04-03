@@ -1,0 +1,3 @@
+Vue.component('preloader', {
+	template: ``
+})
