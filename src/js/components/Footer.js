@@ -1,5 +1,5 @@
 Vue.component('my-footer', {
-    props: ['numbersOfStudents'],
+    props: ['numbers-of-students'],
     template: `<footer>
         <img src="/src/images/logo.png">
         <div class="contacts">
