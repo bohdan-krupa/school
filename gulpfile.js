@@ -49,4 +49,24 @@ gulp.task('watch', ['sass'], () => {
 	gulp.watch([path.html, path.sass], ['reload']);
 });
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('test', () => {
+	setInterval(() => {
+		exec('git add .', function(err, stdout, stderr) {
+			console.log(stdout);
+			console.log(stderr);
+
+			exec('git commit -m "update"', function(err, stdout, stderr) {
+				console.log(stdout);
+				console.log(stderr);
+
+				exec('git push -u origin master', function(err, stdout, stderr) {
+					console.log(stdout);
+					console.log(stderr);
+				});
+			});
+		});
+		console.log('sfdgsdgsgsdgfsdfsgsd')
+	}, 5000)
+})
+
+gulp.task('default', ['browser-sync', 'watch', 'test']);
