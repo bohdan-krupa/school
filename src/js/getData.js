@@ -3,5 +3,5 @@ let numberOfStudents = databaseRef.child('numberOfStudents')
 
 numberOfStudents.once('value').then(snap => {
 	console.log(snap.val())
-	LiveNumbers.numberOfStudents = snap.val()
+	// LiveNumbers.numberOfStudents = snap.val()
 })
