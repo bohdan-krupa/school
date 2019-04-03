@@ -228,7 +228,7 @@ Vue.component('main-events', {
 Vue.component('live-numbers', {
 	data: () => {
 		return {
-			// numbersOfTeachers: null
+			years: new Date().getFullYear() - 1990
 		}
 	},
     props: ['numberOfStudents', 'numberOfTeachers'],
@@ -244,7 +244,7 @@ Vue.component('live-numbers', {
 				<p>Вчителів</p>
 			</div>
 			<div class="block-number">
-				<p class="live-number-3">27</p>
+				<p class="live-number-3">{{ years }}</p>
 				<p>Років</p>
 			</div>
 		</div>
