@@ -1,4 +1,4 @@
-let AdminHome = Vue.component('admin-home', {
+let AdminMain = Vue.component('admin-main', {
 	data: () => {
 		return {
 			actions: [
