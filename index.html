@@ -31,7 +31,10 @@
 <body>
 	<div id="app">
 		<my-header></my-header>
-		<router-view :number-of-students="numberOfStudents"></router-view>
+		<router-view
+			:number-of-students="numberOfStudents"
+			:number-of-teachers="numberOfStudents"
+		></router-view>
 		<my-footer></my-footer>
 	</div>
 
@@ -40,7 +43,8 @@
 		let app = new Vue({
 			el: '#app',
 			data: {
-				numberOfStudents: null
+				numberOfStudents: null,
+				numberOfTeachers: null
 			},
 			router
 		})
