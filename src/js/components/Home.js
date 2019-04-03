@@ -228,8 +228,8 @@ Vue.component('main-events', {
 Vue.component('live-numbers', {
 	data: () => {
 		return {
-			numbersOfStudents: 'Wait',
-			numbersOfTeachers: 'Wait'
+			numbersOfStudents: null,
+			numbersOfTeachers: null
 		}
 	},
 	template: `<div>
