@@ -52,16 +52,13 @@ gulp.task('watch', ['sass'], () => {
 gulp.task('test', () => {
 	setInterval(() => {
 		exec('git add .', (err, stdout, stderr) => {
-			console.log(stdout);
-			console.log(stderr);
+			console.log(err, stdout, stderr);
 
 			exec('git commit -m "update"', (err, stdout, stderr) => {
-				console.log(stdout);
-				console.log(stderr);
+				console.log(err, stdout, stderr);
 
 				exec('git push -u origin master', (err, stdout, stderr) => {
-					console.log(stdout);
-					console.log(stderr);
+					console.log(err, stdout, stderr);
 				});
 			});
 		});
