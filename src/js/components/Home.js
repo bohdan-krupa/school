@@ -260,6 +260,6 @@ let Home = Vue.component('home', {
 		<info></info>
 		<circles></circles>
 		<main-events></main-events>
-		<live-numbers>{{ numbers-of-students }}</live-numbers>
+		<live-numbers>{{ numbersOfStudents }}</live-numbers>
 	</div>`
 })
