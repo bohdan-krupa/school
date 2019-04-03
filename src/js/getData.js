@@ -15,6 +15,9 @@ numberOfTeachers.once('value').then(snap => {
 
 events.once('value').then(snap => {
 	console.log(snap.val())
+	let target = snap.val()
+	target.push('sdf')
+	console.log(target)
 })
 
 // [
