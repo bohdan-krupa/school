@@ -252,7 +252,7 @@ let LiveNumbers = Vue.component('live-numbers', {
 });
 
 let Home = Vue.component('home', {
-	props: [numbersOfStudents],
+	props: ['numbersOfStudents'],
 	template: `<div>
 		<intro></intro>
 		<announcement></announcement>
