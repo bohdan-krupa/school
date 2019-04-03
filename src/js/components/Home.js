@@ -226,6 +226,11 @@ Vue.component('main-events', {
 });
 
 Vue.component('live-numbers', {
+	data: () => {
+		return {
+			// numbersOfTeachers: null
+		}
+	},
     props: ['numberOfStudents', 'numbersOfTeachers'],
 	template: `<div>
 		<p class="live-numbers-title">Школа у цифрах</p>
