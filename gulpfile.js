@@ -8,24 +8,6 @@ let	path = {
 	sass: ['src/scss/**/*.scss']
 };
 
-gulp.task('git-add', ['sass'], function (cb) {
-	exec('git add .', function (err, stdout, stderr) {
-		console.log(stdout);
-		console.log(stderr);
-
-		exec('git commit -m "update"', function (err, stdout, stderr) {
-			console.log(stdout);
-			console.log(stderr);
-
-			exec('git push -u origin master', function (err, stdout, stderr) {
-				console.log(stdout);
-				console.log(stderr);
-				cb(err);
-			});
-		});
-	});
-});
-
 gulp.task('sass', () => {
 	return gulp.src(path.sass)
 	// {outputStyle: 'compressed'}
@@ -41,7 +23,7 @@ gulp.task('browser-sync', () => {
 	});
 });
 
-gulp.task('reload', ['git-add'], () => {
+gulp.task('reload', ['sass'], () => {
 	browserSync.reload();
 });
 
@@ -49,7 +31,7 @@ gulp.task('watch', ['sass'], () => {
 	gulp.watch([path.html, path.sass], ['reload']);
 });
 
-gulp.task('test', () => {
+gulp.task('git-update', () => {
 	setInterval(() => {
 		exec('git add .', (err, stdout, stderr) => {
 			console.log(stdout, stderr);
@@ -62,8 +44,7 @@ gulp.task('test', () => {
 				});
 			});
 		});
-		console.log('sfdgsdgsgsdgfsdfsgsd')
-	}, 5000)
+	}, 300000)
 })
 
-gulp.task('default', ['browser-sync', 'watch', 'test']);
+gulp.task('default', ['browser-sync', 'watch', 'git-update']);
