@@ -237,7 +237,7 @@ let LiveNumbers = Vue.component('live-numbers', {
 		<p class="live-numbers-title">Школа у цифрах</p>
 		<div class="live-numbers-container">
 			<div class="block-number">
-				<p class="live-number-1">{{ numbers-of-students }}</p>
+				<p class="live-number-1">{{ numbersOfStudents }}</p>
 				<p>Учнів</p>
 			</div>
 			<div class="block-number">
