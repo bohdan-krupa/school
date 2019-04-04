@@ -67,3 +67,7 @@ table {
       background-color: #423C40; }
     .admin-container a:hover {
       transform: scale(0.9); }
+
+@media screen and (max-width: 1150px) {
+  .admin-container {
+    flex-direction: column; } }
