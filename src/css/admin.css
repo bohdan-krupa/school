@@ -43,4 +43,4 @@ table {
 
 .admin-container {
   display: flex;
-  align-items: stretch; }
+  flex-direction: row; }
