@@ -43,6 +43,7 @@ table {
 
 .admin-container {
   display: flex;
+  height: 100vh;
   justify-content: space-around; }
   .admin-container a {
     flex: 1 1 auto;
