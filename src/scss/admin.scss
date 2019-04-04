@@ -5,7 +5,6 @@
 .admin-container {
 	display: flex;
 	justify-content: space-around;
-	font-family: 'Comfortaa';
 
 
 	a {
@@ -13,6 +12,7 @@
 		height: 100vh;
 		text-align: center;
 		line-height: 100vh;
+		font-family: 'Comfortaa';
 		color: #000;
 		text-decoration: none;
 
@@ -23,5 +23,9 @@
 		&:nth-child(4) { background-color: #F5A352; }
 		&:nth-child(5) { background-color: #FB7374; }
 		&:nth-child(6) { background-color: #423C40; }
+
+		&:hover {
+			transform: scale(.9);
+		}
 	}
 }

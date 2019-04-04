@@ -43,13 +43,13 @@ table {
 
 .admin-container {
   display: flex;
-  justify-content: space-around;
-  font-family: 'Comfortaa'; }
+  justify-content: space-around; }
   .admin-container a {
     flex: 1;
     height: 100vh;
     text-align: center;
     line-height: 100vh;
+    font-family: 'Comfortaa';
     color: #000;
     text-decoration: none; }
     .admin-container a:nth-child(1) {
@@ -64,3 +64,5 @@ table {
       background-color: #FB7374; }
     .admin-container a:nth-child(6) {
       background-color: #423C40; }
+    .admin-container a:hover {
+      transform: scale(0.9); }
