@@ -46,6 +46,8 @@ table {
   justify-content: space-around; }
   .admin-container a {
     flex: 1;
-    text-align: center;
     height: 100vh;
-    background-color: green; }
+    text-align: center;
+    line-height: 100vh; }
+    .admin-container a:nth-child(1) {
+      background-color: green; }
