@@ -34,5 +34,12 @@
 @media screen and (max-width: 1150px) {
 	.admin-container {
 		flex-direction: column;
+		height: 100%;
+
+
+		a {
+			height: calc(100% / 6);
+			line-height: calc(100% / 6);
+		}
 	}
 }
