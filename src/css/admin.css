@@ -44,7 +44,7 @@ table {
 .admin-container {
   display: flex;
   justify-content: space-around;
-  align-content: center;
-  height: 600px; }
+  align-items: stretch; }
   .admin-container a {
-    background-color: green; }
+    background-color: green;
+    align-self: stretch; }
