@@ -43,4 +43,8 @@ table {
 
 .admin-container {
   display: flex;
-  flex-direction: row; }
+  justify-content: space-around;
+  align-content: center;
+  height: 600px; }
+  .admin-container a {
+    background-color: green; }
