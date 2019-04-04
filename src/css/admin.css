@@ -45,10 +45,8 @@ table {
   display: flex;
   justify-content: space-around; }
   .admin-container a {
-    flex: 1;
-    height: 100vh;
+    flex: 1 1 auto;
     text-align: center;
-    line-height: 100vh;
     font-family: 'Comfortaa';
     color: #000;
     text-decoration: none;
@@ -70,8 +68,4 @@ table {
 
 @media screen and (max-width: 1150px) {
   .admin-container {
-    flex-direction: column;
-    height: 100%; }
-    .admin-container a {
-      height: calc(100% / 6);
-      line-height: calc(100% / 6); } }
+    flex-direction: column; } }
