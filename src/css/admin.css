@@ -41,9 +41,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  height: 100%; }
+
 .admin-container {
   display: flex;
-  height: 100vh;
+  min-height: 100%;
   justify-content: space-around; }
   .admin-container a {
     flex: 1 1 auto;

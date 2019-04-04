@@ -2,9 +2,13 @@
 
 @import 'reset';
 
+body {
+	height: 100%;
+}
+
 .admin-container {
 	display: flex;
-	height: 100vh;
+	min-height: 100%;
 	justify-content: space-around;
 
 
