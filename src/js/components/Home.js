@@ -260,11 +260,11 @@ Vue.component('main-events', {
 	template: `<div>
 		<p class="main-events-title">Головні події</p>
 		<div class="events-container">
-			<div v-for="event in events" class="event">
+			<div v-for="(event, id) in events" class="event">
 				<div class="event-img" :style="{ backgroundImage: 'url(' + event.photo + ')' }"></div>
 				<div class="event-title">{{ event.title }}</div>
 				<div class="event-short-text">{{ cutText(event.text) }}</div>
-				<div class="button">Читати далі</div>
+				<router-link :to="'events/' + id" class="button">Читати далі</router-link>
 			</div>
 		</div>
 	</div>`
