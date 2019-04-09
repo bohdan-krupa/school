@@ -2,21 +2,16 @@
 
 @import 'reset';
 
-body {
-	height: 100%;
-}
-
 .admin-container {
 	display: flex;
-	min-height: 100%;
 	justify-content: space-around;
 
 
 	a {
 		flex: 1 1 auto;
-		// height: 100vh;
+		height: 100vh;
 		text-align: center;
-		// line-height: 100vh;
+		line-height: 100vh;
 		font-family: 'Comfortaa';
 		color: #000;
 		text-decoration: none;
@@ -39,12 +34,11 @@ body {
 @media screen and (max-width: 1150px) {
 	.admin-container {
 		flex-direction: column;
-		// height: 100vh;
 
 
 		a {
-			// height: calc(100% / 6);
-			// line-height: calc(100% / 6);
+			height: calc(100vh / 6);
+			line-height: calc(100vh / 6);
 		}
 	}
 }

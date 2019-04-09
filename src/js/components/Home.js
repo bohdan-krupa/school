@@ -219,6 +219,14 @@ Vue.component('circles', {
 });
 
 Vue.component('main-events', {
+	data: () => {
+		return {
+			events: null
+		}
+	},
+	created: () => {
+		console.log(';');
+	},
 	template: `<div>
 		<p class="main-events-title">Головні події</p>
 		<div class="events-container"></div>
