@@ -240,22 +240,21 @@ Vue.component('main-events', {
 	},
 	methods: {
 		cutText(text) {
-			let textArr = text.split(' ')
+			let words = text.split(' ')
 			let capacity = 0
-			let newText = ''
-			for (let key of textArr) {
-				console.log(key)
-				capacity += key.length + 1;
+			let shortText = ''
+			for (let word of words) {
+				capacity += word.length + 1
 
 				if (capacity >= 235) {
-					newText += '...';
+					shortText += '...'
 					break;
 				} else {
-					newText += key + ' '
+					shortText += word + ' '
 				}
 			}
 
-			return newText
+			return shortText
 		}
 	},
 	template: `<div>
