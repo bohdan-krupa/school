@@ -218,6 +218,11 @@ Vue.component('circles', {
 	</div>`
 });
 
+let databaseRef = firebase.database().ref()
+let numberOfStudents = databaseRef.child('numberOfStudents')
+let numberOfTeachers = databaseRef.child('numberOfTeachers')
+let events = databaseRef.child('events')
+
 Vue.component('main-events', {
 	data: () => {
 		return {
@@ -226,6 +231,10 @@ Vue.component('main-events', {
 	},
 	created: () => {
 		console.log(';');
+		events.once('value').then(snap => {
+			let target = snap.val()
+			console.log(target)
+		})
 	},
 	template: `<div>
 		<p class="main-events-title">Головні події</p>
