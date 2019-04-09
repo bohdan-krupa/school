@@ -231,7 +231,11 @@ Vue.component('main-events', {
 	},
 	created: function() {
 		events.once('value').then(snap => {
-			this.events = snap.val()
+			let targetVal = snap.val()
+			targetVal = targetVal.filter((val, index) => {
+				return index != 0 && index <= 3
+			})
+			this.events = targetVal
 		})
 	},
 	template: `<div>
