@@ -238,13 +238,18 @@ Vue.component('main-events', {
 			this.events = targetVal
 		})
 	},
+	methods: {
+		test() {
+			return 'sfgsfg'
+		}
+	},
 	template: `<div>
 		<p class="main-events-title">Головні події</p>
 		<div class="events-container">
 			<div v-for="event in events" class="event">
 				<div class="event-img"></div>
 				<div class="event-title">{{ event.title }}</div>
-				<div class="event-short-text"></div>
+				<div class="event-short-text">{{ test() }}</div>
 				<div class="button">Читати далі</div>
 			</div>
 		</div>
