@@ -226,19 +226,19 @@ let events = databaseRef.child('events')
 Vue.component('main-events', {
 	data: () => {
 		return {
-			events: null
+			events: "sdfg"
 		}
 	},
-	created: () => {
+	created: function() {
 		console.log(';');
 		events.once('value').then(snap => {
-			let target = snap.val()
-			console.log(target)
+			this.events = snap.val()
+			// console.log(target)
 		})
 	},
 	template: `<div>
 		<p class="main-events-title">Головні події</p>
-		<div class="events-container"></div>
+		<div class="events-container">{{ events }}</div>
 	</div>`
 });
 

@@ -11,6 +11,26 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyDZPs_myjwnm69OK8sMxqW2rSDcbdDib5E",
+			authDomain: "school-96.firebaseapp.com",
+			databaseURL: "https://school-96.firebaseio.com",
+			projectId: "school-96",
+			storageBucket: "school-96.appspot.com",
+			messagingSenderId: "1078650147442"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="src/js/components/Header.js"></script>
+	<script src="src/js/components/Footer.js"></script>
+	<script src="src/js/components/Home.js"></script>
+	<script src="src/js/components/EventsContainer.js"></script>
+	<script src="src/js/components/ContactContainer.js"></script>
+	<script src="src/js/router.js"></script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125001520-1"></script>
 	<script>
@@ -20,14 +40,6 @@
 
 		gtag('config', 'UA-125001520-1');
 	</script>
-	<script src="src/js/components/Header.js"></script>
-	<script src="src/js/components/Footer.js"></script>
-	<script src="src/js/components/Home.js"></script>
-	<script src="src/js/components/EventsContainer.js"></script>
-	<script src="src/js/components/ContactContainer.js"></script>
-	<script src="src/js/router.js"></script>
-
-	
 </head>
 <body>
 	<div id="app">
@@ -50,19 +62,7 @@
 			router
 		})
 	</script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-	<script>
-		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyDZPs_myjwnm69OK8sMxqW2rSDcbdDib5E",
-			authDomain: "school-96.firebaseapp.com",
-			databaseURL: "https://school-96.firebaseio.com",
-			projectId: "school-96",
-			storageBucket: "school-96.appspot.com",
-			messagingSenderId: "1078650147442"
-		};
-		firebase.initializeApp(config);
-	</script>
+	
 	<script src="src/js/getData.js"></script>
 	<!-- Google Maps API -->
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEAzsT-0CWLldFqM1QWJM1MNyLu76K-KU&callback=initMap" async></script>
