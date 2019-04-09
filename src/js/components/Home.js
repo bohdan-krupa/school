@@ -239,8 +239,20 @@ Vue.component('main-events', {
 		})
 	},
 	methods: {
-		test() {
-			return 'sfgsfg'
+		cutText(text) {
+			let textArr = text.split(' ')
+			let capacity = 0
+			let cutText = ''
+			for (let key in textArr) {
+				capacity += textArr[key].length + 1;
+
+				if (capacity >= 235) {
+					cutText += '...';
+					break;
+				}
+				cutText += textArr[key] + ' ';
+			}
+			return cutText
 		}
 	},
 	template: `<div>
@@ -249,7 +261,7 @@ Vue.component('main-events', {
 			<div v-for="event in events" class="event">
 				<div class="event-img"></div>
 				<div class="event-title">{{ event.title }}</div>
-				<div class="event-short-text">{{ test() }}</div>
+				<div class="event-short-text">{{ cutText(event.text) }}</div>
 				<div class="button">Читати далі</div>
 			</div>
 		</div>
