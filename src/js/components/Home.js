@@ -261,7 +261,7 @@ Vue.component('main-events', {
 		<p class="main-events-title">Головні події</p>
 		<div class="events-container">
 			<div v-for="event in events" class="event">
-				<div class="event-img"></div>
+				<div class="event-img" :style="{ backgroundImage: 'url(' + event.photo + ')' }"></div>
 				<div class="event-title">{{ event.title }}</div>
 				<div class="event-short-text">{{ cutText(event.text) }}</div>
 				<div class="button">Читати далі</div>
