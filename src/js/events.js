@@ -57,7 +57,7 @@ function isHash(json) {
 }
 
 function getJSON(callback) {
-	$.getJSON('https://school96.000webhostapp.com/events/', json => callback(json));
+	$.getJSON('https://school96.000webhostapp.com/events/', json => callback(json))
 }
 
 if (!location.hash) {
