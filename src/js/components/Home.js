@@ -273,19 +273,30 @@ Vue.component('main-events', {
 Vue.component('live-numbers', {
 	data: () => {
 		return {
+			students: null,
+			teachers: null,
 			years: new Date().getFullYear() - 1990
 		}
+	},
+	created: () => {
+		numberOfStudents.once('value').then(snap => {
+			this.students = snap.val()
+		})
+
+		numberOfTeachers.once('value').then(snap => {
+			this.teachers = snap.val()
+		})
 	},
     props: ['numberOfStudents', 'numberOfTeachers'],
 	template: `<div>
 		<p class="live-numbers-title">Школа у цифрах</p>
 		<div class="live-numbers-container">
 			<div class="block-number">
-				<p class="live-number-1">{{ numberOfStudents }}</p>
+				<p class="live-number-1">{{ students }}</p>
 				<p>Учнів</p>
 			</div>
 			<div class="block-number">
-				<p class="live-number-2">{{ numberOfTeachers }}</p>
+				<p class="live-number-2">{{ teachers }}</p>
 				<p>Вчителів</p>
 			</div>
 			<div class="block-number">
