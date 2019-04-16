@@ -278,7 +278,7 @@ Vue.component('live-numbers', {
 			years: new Date().getFullYear() - 1990
 		}
 	},
-	created: () => {
+	created: function() {
 		numberOfStudents.once('value').then(snap => {
 			this.students = snap.val()
 		})
@@ -287,7 +287,6 @@ Vue.component('live-numbers', {
 			this.teachers = snap.val()
 		})
 	},
-    props: ['numberOfStudents', 'numberOfTeachers'],
 	template: `<div>
 		<p class="live-numbers-title">Школа у цифрах</p>
 		<div class="live-numbers-container">
